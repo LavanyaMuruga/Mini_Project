@@ -1,0 +1,16 @@
+
+<?php 
+/** @var Embitel\Storelocator\Block\Link $block */ ?>
+<?php $articleCollection = $block->getCollection(); ?>
+<?php if (count($articleCollection)) { ?>
+      <h2><?= $block->escapeHtml(__('Store Details')) ?></h2>
+      <?php foreach($articleCollection as $post): ?>
+          
+<div class="content-wrapper">
+
+
+<h3><?php echo $post->getstore_name(); ?></h3>
+<p><?php echo $post->getstore_address(); ?></p>
+</div>
+     <?php endforeach; ?> 
+<?php } ?> 
