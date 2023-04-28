@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+   
+   <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="storelocator_listing_data_source" xsi:type="string">Embitel\Storelocator\Model\ResourceModel\Storelocator\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Embitel\Storelocator\Model\ResourceModel\Storelocator\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">store_table</argument>
+            <argument name="eventPrefix" xsi:type="string">Storelocator_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">Storelocator_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Embitel\Storelocator\Model\ResourceModel\Storelocator</argument>
+        </arguments>
+    </type>
+</config>

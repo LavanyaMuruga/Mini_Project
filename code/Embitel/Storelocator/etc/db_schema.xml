@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+   <table name="store_table" resource="default" engine="innodb" comment="Store Table">
+       
+     <column xsi:type="int" name="storelocator_id" unsigned="true" nullable="false" identity="true" comment="Store ID"/>
+     
+     <column xsi:type="varchar" name="store_id"  length="255" nullable="false" comment="Store id"/>
+     <column xsi:type="varchar" name="StoreName" length="255" nullable="false" comment="StoreName"/>
+     <column xsi:type="varchar" name="Address" length="255" nullable="false" comment="Address"/>
+     <column xsi:type="varchar" name="City" length="255" nullable="false" comment="City"/>
+    
+     
+     <constraint xsi:type="primary" referenceId="PRIMARY">
+         <column name="storelocator_id" />
+     </constraint>
+   </table>
+</schema>
