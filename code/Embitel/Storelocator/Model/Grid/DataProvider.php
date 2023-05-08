@@ -3,7 +3,7 @@
 namespace Embitel\Storelocator\Model\Grid;
 
 use Magento\Framework\App\Request\DataPersistorInterface;
-use Embitel\Storelocator\Model\ResourceModel\Employee\CollectionFactory;
+use Embitel\Storelocator\Model\ResourceModel\Post\CollectionFactory;
 use Magento\Ui\DataProvider\AbstractDataProvider;
 
 class DataProvider extends AbstractDataProvider
@@ -32,8 +32,15 @@ class DataProvider extends AbstractDataProvider
 
     public function getData()
     {
-     $this->loadedData = [];
-     return $this->loadedData;
+        if (isset($this->loadedData)) {
+            return $this->loadedData;
+        }
+
+        $items = $this->collection->getItems();
+        foreach ($items as $model) {
+            $this->loadedData[$model->getId()] = $model->getData();
+        }
+        return $this->loadedData;
     }
 }
 ?>

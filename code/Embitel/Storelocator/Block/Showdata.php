@@ -4,7 +4,7 @@ namespace Embitel\Storelocator\Block;
 
 use Magento\Framework\View\Element\Template;
 use Magento\Backend\Block\Template\Context;
-use Embitel\Storelocator\Model\ResourceModel\Employee\CollectionFactory;
+use Embitel\Storelocator\Model\ResourceModel\Post\CollectionFactory;
 
 class Showdata extends Template
 {
