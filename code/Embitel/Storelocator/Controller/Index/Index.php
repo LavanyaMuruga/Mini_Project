@@ -4,6 +4,7 @@ namespace Embitel\Storelocator\Controller\Index;
 
 use \Magento\Framework\App\Action\HttpGetActionInterface;
 use \Magento\Framework\View\Result\PageFactory;
+
 class Index implements HttpGetActionInterface
 {
     /**
@@ -28,4 +29,3 @@ class Index implements HttpGetActionInterface
         return $this->resultPageFactory->create();
     }
 }
-?> 

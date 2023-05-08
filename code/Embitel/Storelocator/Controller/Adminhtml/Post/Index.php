@@ -16,14 +16,14 @@ class Index extends Action
 
     /**
      * Core Registry
-     * 
+     *
      * @var Registry
      */
     protected $coreRegistry;
 
     /**
      * Result Page Factory
-     * 
+     *
      * @var PageFactory
      */
     protected $resultPageFactory;
@@ -44,8 +44,7 @@ class Index extends Action
         PageFactory $resultPageFactory,
         ForwardFactory $resultForwardFactory,
         Context $context
-    )
-    {
+    ) {
         $this->coreRegistry = $registry;
         $this->resultPageFactory = $resultPageFactory;
         $this->resultForwardFactory = $resultForwardFactory;
@@ -59,9 +58,8 @@ class Index extends Action
     {
         //die("yes");
         $resultPage = $this->resultPageFactory->create();
-        $resultPage->addBreadCrumb(__('STORE LOCATION'),__('STORE LOCATION'));
+        $resultPage->addBreadCrumb(__('STORE LOCATION'), __('STORE LOCATION'));
         $resultPage->getConfig()->getTitle()->prepend(__('STORE LOCATION'));
         return $resultPage;
     }
 }
-?>

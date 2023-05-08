@@ -9,14 +9,14 @@ use Magento\Ui\DataProvider\AbstractDataProvider;
 class DataProvider extends AbstractDataProvider
 {
     /**
-     * 
+     *
      * @var DataPersistorInterface
      */
     protected $dataPersistor;
     /**
      * @var array
      */
-    Protected $loadedData;
+    protected $loadedData;
 
     public function __construct(
         $name,
@@ -43,4 +43,3 @@ class DataProvider extends AbstractDataProvider
         return $this->loadedData;
     }
 }
-?>

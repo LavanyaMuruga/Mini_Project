@@ -102,4 +102,3 @@ class Editpost extends \Magento\Backend\App\Action implements HttpGetActionInter
         return $resultPage;
     }
 }
-?>

@@ -14,4 +14,3 @@ class Reset extends \Magento\Catalog\Block\Adminhtml\Product\Edit\Button\Generic
         ];
     }
 }
-?>

@@ -10,7 +10,6 @@ class Post extends \Magento\Framework\Model\ResourceModel\Db\AbstractDB
      */
     protected function _construct()
     {
-        $this->_init('store_locator', 'entity_id');   
+        $this->_init('store_locator', 'entity_id');
     }
 }
-?>

@@ -21,6 +21,4 @@ class Showdata extends Template
     {
         return $this->collection->create();
     }
-
 }
-?>

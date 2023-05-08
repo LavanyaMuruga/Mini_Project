@@ -1,5 +1,6 @@
 <?php
 namespace Embitel\Storelocator\Model;
+
 use Magento\Framework\Model\AbstractModel;
 
 class Post extends AbstractModel
@@ -12,4 +13,3 @@ class Post extends AbstractModel
         $this->_init('Embitel\Storelocator\Model\ResourceModel\Post');
     }
 }
-?>

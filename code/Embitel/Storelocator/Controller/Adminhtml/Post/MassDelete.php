@@ -41,4 +41,3 @@ class MassDelete extends Action
         return $this->resultFactory->create(ResultFactory::TYPE_REDIRECT)->setPath('store/post/index');
     }
 }
-?>

@@ -16,14 +16,14 @@ class NewStoreForm extends Action
 
     /**
      * Core Registry
-     * 
+     *
      * @var Registry
      */
     protected $coreRegistry;
 
     /**
      * Result Page Factory
-     * 
+     *
      * @var PageFactory
      */
     protected $resultPageFactory;
@@ -44,8 +44,7 @@ class NewStoreForm extends Action
         PageFactory $resultPageFactory,
         ForwardFactory $resultForwardFactory,
         Context $context
-    )
-    {
+    ) {
         $this->coreRegistry = $registry;
         $this->resultPageFactory = $resultPageFactory;
         $this->resultForwardFactory = $resultForwardFactory;
@@ -58,9 +57,8 @@ class NewStoreForm extends Action
     public function execute()
     {
         $resultPage = $this->resultPageFactory->create();
-        $resultPage->addBreadCrumb(__('NEW STORE FORM'),__('NEW STORE FORM'));
+        $resultPage->addBreadCrumb(__('NEW STORE FORM'), __('NEW STORE FORM'));
         $resultPage->getConfig()->getTitle()->prepend(__('NEW STORE FORM'));
         return $resultPage;
     }
 }
-?>

@@ -202,30 +202,7 @@
             </settings>
         </column>
 
-               <column name="store_opening_time">
-            <settings>
-                <filter>text</filter>
-                <editor>
-                    <validation>
-                        <rule name="required-entry" xsi:type="boolean">true</rule>
-                    </validation>
-                    <editorType>text</editorType>
-                </editor>
-                <label translate="true">Store Open</label>
-            </settings>
-        </column>
-              <column name="store_closing_time">
-            <settings>
-                <filter>text</filter>
-                <editor>
-                    <validation>
-                        <rule name="required-entry" xsi:type="boolean">true</rule>
-                    </validation>
-                    <editorType>text</editorType>
-                </editor>
-                <label translate="true">Store Close</label>
-            </settings>
-        </column>
+              
         
                <column name="latitude">
             <settings>
@@ -251,6 +228,7 @@
                 <label translate="true">Longitude</label>
             </settings>
         </column>
+
         <column name="created_at" class="Magento\Ui\Component\Listing\Columns\Date">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">

@@ -69,13 +69,11 @@ class Action extends Column
                             ['entity_id' => $item['entity_id']]
                         ),
                         'label' => __('Delete'),
-                    ];
+                     ];
                 }
             }
         }
 
         return $dataSource;
     }
-
-
 }

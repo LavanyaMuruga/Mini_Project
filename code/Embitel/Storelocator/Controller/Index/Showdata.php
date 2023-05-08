@@ -21,4 +21,3 @@ class Showdata extends Action
         return $this->resultPageFactory->create();
     }
 }
-?>

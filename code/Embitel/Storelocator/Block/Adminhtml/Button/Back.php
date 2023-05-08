@@ -20,4 +20,3 @@ class Back extends Generic implements ButtonProviderInterface
         return $this->getUrl('*/*/');
     }
 }
-?>

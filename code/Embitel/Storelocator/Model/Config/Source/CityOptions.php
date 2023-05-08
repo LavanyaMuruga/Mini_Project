@@ -30,4 +30,3 @@ class CityOptions implements \Magento\Framework\Option\ArrayInterface
         return $options;
     }
 }
-?>
